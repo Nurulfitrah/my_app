@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align:center}
+h2 {text-align:left}
+h3 {text-align:right}
+</style>
+<div style="opacity:0.5;position:absolute;left:50px;width:900px;height:150px;background-color:#40B3DF;"></div>
+
+/*<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
+*/
+<div style="opacity:0.3;position:absolute;left:120px;width:100px;height:200px;background-color:#8AC007;"></div>
+  <title>Task Application</title>
+  <%= stylesheet_link_tag    'application' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<table>
+	<tr>
+		<td colspan="2" bgcolor="orange">
+			<h1><p>Jadual Harian</p></h1>
+		</td>	
+	</tr>
+	<tr>
+		<td bgcolor="grey" valign="top">
+			Menu<br>
+			<a href="users">User</a>
+			<br>
+			<a href="tasks">Task</a>
+		</td>
+		<td>
+			<h4>Body</h4>
+			<%= yield %>
+		</td>	
+	</tr>	
+</table>
+
+
+</body>
+</html>
