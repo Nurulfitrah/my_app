@@ -8,8 +8,8 @@ h3 {text-align:right}
 </style>
 <div style="opacity:0.5;position:absolute;left:50px;width:900px;height:150px;background-color:#40B3DF;"></div>
 
-/*<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
-*/
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
+
 <div style="opacity:0.3;position:absolute;left:120px;width:100px;height:200px;background-color:#8AC007;"></div>
   <title>Task Application</title>
   <%= stylesheet_link_tag    'application' %>
@@ -27,13 +27,14 @@ h3 {text-align:right}
 	</tr>
 	<tr>
 		<td bgcolor="grey" valign="top">
-			Menu<br>
-			<a href="users">User</a>
-			<br>
+			Menu
+			<p></p>		<a href="users">User</a>
+			
 			<a href="tasks">Task</a>
 		</td>
+	</tr>
 		<td>
-			<h4>Body</h4>
+			
 			<%= yield %>
 		</td>	
 	</tr>	
